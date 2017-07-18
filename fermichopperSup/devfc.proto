@@ -2,5 +2,10 @@ Terminator = LF;
 
 getStatus {
     out "#0000000$";
-    in "%d";
+    in "#1%d%<julich>";
+}
+
+sendThing {
+	out "#10003%<julich>$";
+	in "%d";
 }
