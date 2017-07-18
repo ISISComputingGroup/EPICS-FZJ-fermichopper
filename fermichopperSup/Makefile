@@ -3,7 +3,7 @@ include $(TOP)/configure/CONFIG
 #=======================================
 
 # Install .dbd and .db files
-DATA += devfermichopper.proto
+DATA += devfc.proto
 
 #=======================================
 include $(TOP)/configure/RULES

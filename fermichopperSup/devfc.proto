@@ -1,0 +1,6 @@
+Terminator = LF;
+
+getStatus {
+    out "#0000000$";
+    in "%d";
+}
