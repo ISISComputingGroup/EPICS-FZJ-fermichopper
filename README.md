@@ -1,2 +1,2 @@
-# EPICS-fermichopper
-EPICS support module for the fermi chopper
+# EPICS-FZJ-fermichopper
+EPICS support module for the FZJ fermi chopper
