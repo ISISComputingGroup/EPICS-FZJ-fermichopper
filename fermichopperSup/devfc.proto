@@ -2,9 +2,9 @@ Terminator = LF;
 
 getStatus {
     out "#0000000$";
-    in "#1%4c%<julich>";
+    in "#%5c%<julich>";
 }
 
-sendThing {
+sendCommand {
 	out "#1%s%<julich>$";
 }
