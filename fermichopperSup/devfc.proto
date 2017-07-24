@@ -9,3 +9,7 @@ getStatus {
 sendCommand {
 	out "#1000%d%<julich>$";
 }
+
+setSpeed {
+	out "#3000%X%<julich>$";
+}
