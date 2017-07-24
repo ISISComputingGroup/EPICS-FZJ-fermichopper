@@ -2,10 +2,8 @@ Terminator = LF;
 
 getStatus {
     out "#00000%<julich>$";
-#	separator="#";
 	separator="";
-#    in "%6[#0-9A-F]%1.0<julich>";
-    in "%8[#0-9A-F]";
+    in "%8[#0-9A-H]";
 }
 
 sendCommand {
