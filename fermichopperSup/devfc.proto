@@ -22,3 +22,7 @@ setDelayHighWord {
 	out "#6%04X%<julich>$";
 }
 
+setGateWidth {
+	out "#9%04X%<julich>$";
+}
+
