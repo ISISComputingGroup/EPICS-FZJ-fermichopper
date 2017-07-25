@@ -13,3 +13,12 @@ sendCommand {
 setSpeed {
 	out "#3000%X%<julich>$";
 }
+
+setDelayLowWord {
+	out "#5%04X%<julich>$";
+}
+
+setDelayHighWord {
+	out "#6%04X%<julich>$";
+}
+
