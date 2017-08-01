@@ -1,0 +1,28 @@
+Terminator = LF;
+
+getStatus {
+    out "#00000%<julich>$";
+	separator="";
+    in "%8[#0-9A-H]";
+}
+
+sendCommand {
+	out "#1000%d%<julich>$";
+}
+
+setSpeed {
+	out "#3000%X%<julich>$";
+}
+
+setDelayLowWord {
+	out "#5%04X%<julich>$";
+}
+
+setDelayHighWord {
+	out "#6%04X%<julich>$";
+}
+
+setGateWidth {
+	out "#9%04X%<julich>$";
+}
+
