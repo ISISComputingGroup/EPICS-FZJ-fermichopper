@@ -1,4 +1,5 @@
-Terminator = LF;
+OutTerminator = LF;
+InTerminator = "$";
 
 getStatus {
     out "#00000%<julich>$";
