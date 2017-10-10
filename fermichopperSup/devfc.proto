@@ -2,28 +2,34 @@ OutTerminator = LF;
 InTerminator = "$";
 
 getStatus {
+    wait 200;
     out "#00000%<julich>$";
 	separator="";
     in "%8[#0-9A-H]";
 }
 
 sendCommand {
+    wait 200;
 	out "#1000%d%<julich>$";
 }
 
 setSpeed {
+    wait 200;
 	out "#3000%X%<julich>$";
 }
 
 setDelayLowWord {
+    wait 200;
 	out "#5%04X%<julich>$";
 }
 
 setDelayHighWord {
+    wait 200;
 	out "#6%04X%<julich>$";
 }
 
 setGateWidth {
+    wait 200;
 	out "#9%04X%<julich>$";
 }
 
