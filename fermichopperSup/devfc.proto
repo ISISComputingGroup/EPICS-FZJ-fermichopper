@@ -18,14 +18,11 @@ setSpeed {
 	out "#3000%X%<julich>$";
 }
 
-setDelayLowWord {
+setDelay {
     wait 200;
-	out "#5%04X%<julich>$";
-}
-
-setDelayHighWord {
+    out "#5%(\$1DELAY:SP:_CALC.B)04X%<julich>$"; # Low word
     wait 200;
-	out "#6%04X%<julich>$";
+    out "#6%(\$1DELAY:SP:_CALC.C)04X%<julich>$"; # High word
 }
 
 setGateWidth {
