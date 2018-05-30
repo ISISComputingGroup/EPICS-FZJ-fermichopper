@@ -1,5 +1,5 @@
 OutTerminator = LF;
-InTerminator = "$";
+InTerminator = "";
 
 getStatus {
     wait 200;
@@ -15,7 +15,7 @@ sendCommand {
 
 setSpeed {
     wait 200;
-	out "#3000%X%<julich>$";
+	out "#3%0.4X%\$1.0<julich>$";
 }
 
 setDelay {
