@@ -1,5 +1,5 @@
-OutTerminator = LF;
-InTerminator = "";
+OutTerminator = "";
+InTerminator = "$";
 
 getStatus {
     wait 200;
@@ -10,23 +10,23 @@ getStatus {
 
 sendCommand {
     wait 200;
-	out "#1000%d%<julich>$";
+	out "#1000%d%1.0<julich>$";
 }
 
 setSpeed {
     wait 200;
-	out "#3%0.4X%\$1.0<julich>$";
+	out "#3%04X%1.0<julich>$";
 }
 
 setDelay {
     wait 200;
-    out "#5%(\$1DELAY:SP:_CALC.B)04X%<julich>$"; # Low word
+    out "#5%(\$1DELAY:SP:_CALC.B)0.4X%1.0<julich>$"; # Low word
     wait 200;
-    out "#6%(\$1DELAY:SP:_CALC.C)04X%<julich>$"; # High word
+    out "#6%(\$1DELAY:SP:_CALC.C)0.4X%1.0<julich>$"; # High word
 }
 
 setGateWidth {
     wait 200;
-	out "#9%04X%<julich>$";
+	out "#9%0.4X%1.0<julich>$";
 }
 
