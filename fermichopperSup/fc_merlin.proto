@@ -1,0 +1,32 @@
+OutTerminator = LF;
+InTerminator = "$";
+
+getStatus {
+    wait 200;
+    out "#00000%<julich>$";
+	separator="";
+    in "%8[#0-9A-H]";
+}
+
+sendCommand {
+    wait 200;
+	out "#1000%d%<julich>$";
+}
+
+setSpeed {
+    wait 200;
+	out "#3000%X%<julich>$";
+}
+
+setDelay {
+    wait 200;
+    out "#5%(\$1DELAY:SP:_CALC.B)04X%<julich>$"; # Low word
+    wait 200;
+    out "#6%(\$1DELAY:SP:_CALC.C)04X%<julich>$"; # High word
+}
+
+setGateWidth {
+    wait 200;
+	out "#9%04X%<julich>$";
+}
+
