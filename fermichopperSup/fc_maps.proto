@@ -6,6 +6,14 @@ getStatus {
     out "#00000%<julich>$";
 	separator="";
     in "%8[#0-9A-H]";
+    @readtimeout {
+        out "0$";
+        in "%8[#0-9A-H]";
+    }
+    @replytimeout {
+        out "0$";
+        in "%8[#0-9A-H]";
+    }
 }
 
 sendCommand {
